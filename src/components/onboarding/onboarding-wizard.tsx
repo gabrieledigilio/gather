@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Loader2, MapPin } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
-import { GatherLogo } from "@/components/brand/gather-logo";
 import { OnboardingShell } from "@/components/onboarding/onboarding-shell";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -272,9 +271,6 @@ export function OnboardingWizard() {
       case 0:
         return (
           <div className="flex flex-col items-center justify-center text-center">
-            <div className="mb-8 flex justify-center">
-              <GatherLogo size={72} priority />
-            </div>
             <h1 className="font-heading text-4xl leading-tight tracking-tight">
               Find your next <span className="text-rainbow">hackathon</span> or dev event
             </h1>
@@ -578,13 +574,6 @@ export function OnboardingWizard() {
         const meta = PERSONALITY_META[p];
         return (
           <div className="text-center">
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              className="mx-auto mb-6 flex justify-center"
-            >
-              <GatherLogo size={80} />
-            </motion.div>
             <p className="text-sm font-medium text-rainbow">Your event personality</p>
             <h2 className="mt-2 font-heading text-4xl tracking-tight text-rainbow">{meta.title}</h2>
             <p className="mx-auto mt-4 max-w-sm text-muted-foreground leading-relaxed">

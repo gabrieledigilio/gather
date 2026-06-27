@@ -13,10 +13,6 @@ export const metadata = {
   title: "Gather — Events nearby, picked for you",
   description:
     "AI-powered event discovery for builders — hackathons, dev meetups, and workshops picked for you.",
-  icons: {
-    icon: "/Logo.png",
-    apple: "/Logo.png",
-  },
 };
 
 export default function RootLayout({

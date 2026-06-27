@@ -26,7 +26,7 @@ export function OnboardingShell({
       <header className="sticky top-0 z-20 glass-nav border-b-0">
         <div className="mx-auto flex max-w-lg items-center justify-between gap-3 px-6 py-4">
           <div className="flex min-w-0 items-center gap-2">
-            <GatherLogo size={32} showWordmark wordmarkClassName="text-lg" />
+            <GatherLogo wordmarkClassName="text-lg" />
             {title && (
               <>
                 <span className="text-muted-foreground/30">·</span>
