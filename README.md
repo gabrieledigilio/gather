@@ -14,14 +14,8 @@ Discover events nearby, picked for you. A minimal, premium event discovery app i
 - **Notifications** — sample alerts UI (ready for push later)
 - **Supabase Auth** — placeholder on profile (connect when ready)
 
-## Getting started
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) — you'll land on onboarding first.
+## Demo link: 
+https://gather-alpha-five.vercel.app
 
 ## Stack
 
@@ -29,11 +23,3 @@ Open [http://localhost:3000](http://localhost:3000) — you'll land on onboardin
 - Tailwind CSS v4 + shadcn/ui
 - Framer Motion
 - Local storage for preferences (Supabase-ready)
-
-## Deploy
-
-Deploy to [Vercel](https://vercel.com):
-
-```bash
-npx vercel
-```
