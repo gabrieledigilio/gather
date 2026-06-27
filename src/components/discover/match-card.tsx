@@ -64,7 +64,7 @@ export function MatchCard({
       onDragEnd={handleDragEnd}
       whileDrag={{ cursor: "grabbing" }}
       className={cn(
-        "absolute inset-0 touch-none select-none",
+        "absolute inset-0 isolate touch-none select-none",
         !isTop && "pointer-events-none scale-[0.96] opacity-60"
       )}
     >
@@ -136,7 +136,7 @@ export function MatchCard({
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 p-5">
+        <div className="relative z-10 flex flex-col gap-3 bg-background/95 p-5 backdrop-blur">
           <div>
             <p className="text-sm text-muted-foreground">{dateLabel}</p>
             <Link href={`/events/${event.id}`} className="block">
