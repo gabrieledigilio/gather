@@ -24,10 +24,6 @@ const HIGHLIGHTS = [
 export function Homepage() {
   return (
     <div className="relative flex min-h-dvh flex-col">
-      <div className="flex justify-center pt-10">
-        <GatherLogo size={52} priority />
-      </div>
-
       <main className="mx-auto flex w-full max-w-lg flex-1 flex-col justify-center px-6 py-12 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -35,6 +31,11 @@ export function Homepage() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="text-center"
         >
+          <div className="mb-8 flex justify-center sm:mb-10">
+            <div className="glass-card-lg flex size-32 items-center justify-center rounded-3xl p-5 shadow-lg sm:size-36 sm:p-6">
+              <GatherLogo size={112} priority />
+            </div>
+          </div>
           <p className="text-sm font-medium text-rainbow">AI for builders & hackathon crews</p>
           <h1 className="mt-4 font-heading text-4xl leading-[1.1] tracking-tight sm:text-5xl">
             Open the app.{" "}
